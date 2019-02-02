@@ -19,7 +19,7 @@ public class MainActivityPresenter {
 
     public void getPhotos(String query){
         OkHttpHelper.ascyncOkHttpApi("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=e0704084a765455afa2c7af759082590&tags=" +
-                query + "&format=json&nojsoncallback=1&api_sig=de518af018e6bc057fa4c7ab13424c66");
+                query + "&format=json&nojsoncallback=1");
 
     }
 
