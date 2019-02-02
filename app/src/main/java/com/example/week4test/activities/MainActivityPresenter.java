@@ -17,8 +17,9 @@ public class MainActivityPresenter {
         EventBus.getDefault().register(this);
     }
 
-    public void getPhotos(){
-        OkHttpHelper.ascyncOkHttpApi("https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=b70cc739c3f5aa69c88286cd25f27977&per_page=10&page=1&format=json&nojsoncallback=1&api_sig=4cdfe40e6c47ba1ddec95d4ce2687388");
+    public void getPhotos(String query){
+        OkHttpHelper.ascyncOkHttpApi("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=e0704084a765455afa2c7af759082590&tags=" +
+                query + "&format=json&nojsoncallback=1&api_sig=de518af018e6bc057fa4c7ab13424c66");
 
     }
 

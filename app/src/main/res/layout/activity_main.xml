@@ -7,10 +7,24 @@
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Here"/>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textSize="24dp"
+        android:onClick="onClick"/>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        android:layout_height="500dp"></android.support.v7.widget.RecyclerView>
 
 
 </LinearLayout>
